@@ -123,7 +123,7 @@
   <h1>Privacy Policy: SWEPath</h1>
 
   <p class="muted">
-    <strong>Last updated:</strong> September 9, 2026
+    <strong>Last updated:</strong> September 13, 2026
   </p>
 
   <p>
@@ -417,6 +417,16 @@
         aggressive battery management.
       </td>
     </tr>
+
+    <tr>
+      <td><code>READ_BASIC_PHONE_STATE</code></td>
+      <td>
+        Used to read your device's SIM/network country code, so the app can
+        determine whether to apply the India-specific non-personalized ad
+        behavior described in section 4.2. Not used to access your phone
+        number, call state, or call history.
+      </td>
+    </tr>
   </table>
   </div>
 
@@ -481,6 +491,16 @@
   <p>
     You can review or change your ad consent choice anytime from Settings,
     "Manage Ad Consent" (shown only where a choice applies to you).
+  </p>
+
+  <p>
+    To determine whether the India-specific non-personalized behavior above
+    applies, the app reads your device's SIM/network country code (see the
+    <code>READ_BASIC_PHONE_STATE</code> permission in section 3), falling
+    back to your device's locale setting if no SIM/network country is
+    available. This is a coarse, on-device check only; it does not use
+    precise location, GPS, or IP-based geolocation, and the result is not
+    transmitted anywhere on its own.
   </p>
 
   <ul>
